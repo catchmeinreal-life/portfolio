@@ -4,13 +4,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-body {
-    min-height: 110dvh;
+body, html {
+    height: 100%;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
 }
 
 /* Header styles */
@@ -18,9 +17,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transform: translate(0%, 50%);
     padding: 15px 30px;
     background-color: #222;
     color: white;
+    /* margin: 0 30px; */
 }
 
 .header a {
@@ -44,85 +45,45 @@ body {
 .nav_links li a:hover {
     color: #f39c12;
     padding-bottom: 5px;
-    border-bottom: #222 solid 1px;
+    border-bottom: #cac53c solid 1px;
+}
+.nav_menu{
+    display: none;
 }
 
+@media screen and (max-width: 550px) {
+    .header .nav_menu {
+        display: block;
+    }
+    .header .nav_menu i {
+        color: white;
+        font-size: 16px;
+    }
+    .header .nav_links{
+        display: none;
+    }
+    
+}
 
-/* Hero section */
 .hero {
-    
-    padding: 40px;
-    margin: auto;
-    
+    height: 100%;
+    transform: translate(0, 5%);
+}
+
+.hero  .hero-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 
-.side{
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* background: #e67e22; */
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.main{
-    background: #f39c12;
-}
 
-.profile-img {
-    border-radius: 50%;
-    display: block;
-    margin: 10px 0;
-}
 
-.project-img {
-    background-color: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 8px;
-    font-size: 14px;
-}
 
-/* Form styles */
-form {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
 
-form label {
-    display: block;
-    margin: 10px 0 5px;
-}
 
-form input, form textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 
-.btn {
-    margin-top: 15px;
-}
-
-.btn button {
-    padding: 10px 20px;
-    background: #f39c12;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn button:hover {
-    background: #e67e22;
-}
