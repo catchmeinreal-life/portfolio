@@ -79,11 +79,35 @@ body, html {
     position: relative;
 }
 
+.hero-text{
+    text-align: center;
+    color: antiquewhite;
+}
+h1{
+    padding-top: 60px;
+}
+h1, p, button {
+    margin-bottom: 30px;
+}
 
 
 
 
 
 
+/* education css */
 
 
+.hero.education {
+    height: 100%;
+}
+
+
+.hero.education .content{
+    height: 100%;
+    padding: 40px, 0;
+    background: palegoldenrod;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
