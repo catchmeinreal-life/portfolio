@@ -21,15 +21,26 @@
             margin-left: 9%;
             margin-right: 9%;
             margin-top: 10%;
-            position: absolute;
+            position: relative;
+            width: 100%;
         }
         .portfolio h1{
-            font-size: 50px;
+            font-size: 4rem;
             color: white;
             margin-bottom: 50px;
             background-color: black;
             position: relative;
             animation: text 3s 1;
+        }
+        .portfolio h3 {
+            font-size: 2rem;
+            color: rgb(239, 231, 146);
+            margin-bottom: 50px;
+            background-color: black;
+            position: relative;
+        }
+        .portfolio p{
+            margin-bottom: 25px;
         }
 
         @keyframes text {
@@ -52,7 +63,7 @@
        
         .portfolio p{
             color: aliceblue;
-            line-height: 27px;
+            line-height: 35px;
             font-size: 30px;
             background: black;
         }
@@ -64,6 +75,34 @@
         .portfolio p:hover{
             color: aqua;
         }
+
+        .portfolio dl dt{
+            color: aliceblue;
+            font-size: 1.5rem;
+        }
+        .portfolio dl dd{
+            color: aliceblue;
+            padding-left: 20px;
+        }
+
+        .portfolio h4{
+            color: aliceblue;
+        }
+        .portfolio ul {
+            color: white;
+        }
+
+
+        /* interest styling*/
+        .interest{
+            margin-left: 9%;
+            margin-right: 9%;
+            margin-top: 10%;
+            position: absolute;
+        }
+        .interest h1{
+            color: aliceblue;
+        }
     </style>
 </head>
 <body>
@@ -73,7 +112,49 @@
            <span>Portfolio</span>
         </h1>
         <p>
-            I am a passionate software engineer and actuarial science student with a keen interest in leveraging technology to solve real-world problems. Currently in my third year at Maseno University, I have immersed myself in software development, actuarial modeling, and cybersecurity, with a growing focus on full-stack development and quality assurance.
+            Welcome to my portfolio! Here, you'll find a collection of projects that showcase my skills in software engineering, actuarial modeling, cybersecurity, and full-stack development. Each project represents my commitment to building innovative, efficient, and scalable solutions for real-world challenges.
+        </p>
+        <h3>
+            Featured Projects
+        </h3>
+        <!-- description list -->
+        <dl>
+            <dt>1. Telemedicine Platform (In Progress)</dt>
+            <dd>
+                A web-based application integrating blockchain and AI to enhance healthcare accessibility and security.
+            </dd>
+            <dd>
+                Features include secure medical payments, AI-driven prescriptions, and actuarial-based health insurance premium calculations.
+            </dd>
+            <dt>2. E-Commerce Platform (In Development)</dt>
+            <dd>
+                A full-stack marketplace where sellers manage products, users browse and purchase items, and deliveries are handled via GPS-integrated logistics. The platform supports M-Pesa and PayPal transactions.
+            </dd>
+            <dt>3. Life Insurance Policy Valuation (A collaboration project)</dt>
+            <dd>An actuarial model built using Java to assess risk and determine optimal pricing for life insurance policies, incorporating multiple decrement theory and survival analysis.</dd>
+            <dt>4. Hackathon Projects</dt>
+            <dd>A collection of innovative projects built during various hackathons, focusing on AI, fintech, and cybersecurity.</dd>
+            <dd>These projects demonstrate my ability to work under pressure, collaborate in teams, and develop creative solutions.</dd>
+        </dl>
+
+        //skills and technologies
+        <h4>Skills & Technologies</h4>
+        <ul>
+            <li><span>Programming:</span> R, JavaScript, Node.js</li>
+            <li><span>Web Development:</span> HTML, CSS, JavaScript (Vanilla), React (in progress)</li>
+            <li><span>Backend:</span>Spring Boot, Django, Node.js, MySQL</li>
+            <li><span>Cloud & Security:</span> Azure, Blockchain, Cybersecurity Fundamentals</li>
+            <li><span>Actuarial & Data Science:</span>Risk Modeling, Survival Analysis, Data Structures & Algorithms</li>
+        </ul>
+
+        <p>I am constantly working on new projects and open to collaboration. If you're interested in working together, feel free to reach out!</p>
+
+    </div>
+
+    <div class="interest">
+        <h1>
+            <span>  <i>Interest</i></span>
+         </h1>
         <p>
             My journey has taken me through various projects, from building actuarial applications using Java to developing e-commerce platforms and telemedicine solutions. I have also explored blockchain integration, cloud computing, and AI for risk management. My approach combines technical expertise with analytical problem-solving, allowing me to create scalable and efficient solutions.
         </p>
