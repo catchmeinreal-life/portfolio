@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Welcome to my portfolio project! This is a simple yet stylish showcase of my skills using **HTML, CSS, Git, and GitHub**.\r I've also integrated **Google Fonts** and **Font Awesome** for enhanced typography and icons.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.1",
+    "tailwindcss": "^4.1.1"
+  }
+}
