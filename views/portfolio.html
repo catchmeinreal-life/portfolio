@@ -22,7 +22,7 @@
             margin-right: 9%;
             margin-top: 10%;
             position: relative;
-            width: 100%;
+            height: 100%;
         }
         .portfolio h1{
             font-size: 4rem;
@@ -32,6 +32,7 @@
             position: relative;
             animation: text 3s 1;
         }
+
         .portfolio h3 {
             font-size: 2rem;
             color: rgb(239, 231, 146);
@@ -81,16 +82,33 @@
             font-size: 1.5rem;
         }
         .portfolio dl dd{
+            line-height: 23px;
             color: aliceblue;
             padding-left: 20px;
         }
+        .portfolio dl dt span{
+            color: bisque;
+        }
 
-        .portfolio h4{
-            color: aliceblue;
+        .portfolio h4 {
+            font-size: 2rem;
+            color: rgb(239, 231, 146);
+            margin-bottom: 20px;
+            background-color: black;
+            position: relative;
+        }
+
+        .hr{  /*horiontal rule*/
+            padding-top: 23px;
+            width: 50%;
+            margin: auto;
         }
         .portfolio ul {
             color: white;
+            padding-left: 23px;
+            line-height: 23px;
         }
+        
 
 
         /* interest styling*/
@@ -100,8 +118,25 @@
             margin-top: 10%;
             position: absolute;
         }
-        .interest h1{
+        
+        
+        .interest h1{ /* interest*/
+            font-size: 4rem;
+            color: white;
+            margin-bottom: 50px;
+            background-color: black;
+            position: relative;
+            animation: text 3s 1;
+        }
+        .interest p{
+            margin-bottom: 25px;
             color: aliceblue;
+            line-height: 35px;
+            font-size: 30px;
+            background: black;
+        }
+        .interest p:hover{
+            color: aqua;
         }
     </style>
 </head>
@@ -119,24 +154,27 @@
         </h3>
         <!-- description list -->
         <dl>
-            <dt>1. Telemedicine Platform (In Progress)</dt>
+            <dt>1. <span>Telemedicine Platform (In Progress)</span></dt>
             <dd>
                 A web-based application integrating blockchain and AI to enhance healthcare accessibility and security.
             </dd>
             <dd>
                 Features include secure medical payments, AI-driven prescriptions, and actuarial-based health insurance premium calculations.
             </dd>
-            <dt>2. E-Commerce Platform (In Development)</dt>
+            <dt>2. <span>E-Commerce Platform (In Development)</span></dt>
             <dd>
                 A full-stack marketplace where sellers manage products, users browse and purchase items, and deliveries are handled via GPS-integrated logistics. The platform supports M-Pesa and PayPal transactions.
             </dd>
-            <dt>3. Life Insurance Policy Valuation (A collaboration project)</dt>
-            <dd>An actuarial model built using Java to assess risk and determine optimal pricing for life insurance policies, incorporating multiple decrement theory and survival analysis.</dd>
-            <dt>4. Hackathon Projects</dt>
+            <dt>3. <span>Life Insurance Policy Valuation (A collaboration project)</span></dt>
+            <dd>An actuarial model built using javaScript to assess risk and determine optimal pricing for life insurance policies, incorporating multiple decrement theory and survival analysis.</dd>
+            <dt>4. <span>Hackathon Projects</span></dt>
             <dd>A collection of innovative projects built during various hackathons, focusing on AI, fintech, and cybersecurity.</dd>
             <dd>These projects demonstrate my ability to work under pressure, collaborate in teams, and develop creative solutions.</dd>
         </dl>
 
+        <div class="hr">
+            <hr class="edit">
+        </div>
         //skills and technologies
         <h4>Skills & Technologies</h4>
         <ul>
@@ -165,7 +203,7 @@
             
         
         When I'm not working on tech projects, I enjoy skydiving, photography, and continuously expanding my skill set through hackathons and industry collaborations.</p>
-        <p>BSC ACTUARIAL - Bachelor of Science (Actuarial Science, with IT)</p>
+        <div class="pictures-cont" hidden></div>
     </div>
     
 </body>
