@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind CSS</title>
+
+    <!--boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         *{
@@ -13,6 +16,7 @@
             font-family: sans-serif;
         }
         .contact-section {
+            position: relative;
             height: 120vh;
             background: rgb(54, 54, 54);
         }
@@ -36,16 +40,42 @@
         span{
             color: bisque;
         }
+        /*page navigation*/
+        .contact-section .nav-page{
+            position: absolute;
+            left: 25%;
+            top:5%
+        }
+        .bx.bx-left-arrow-alt{
+            color: antiquewhite;
+            font-size: 3rem;
+            animation: nav 3s 1;
+
+        }
+        
+        @keyframes nav {
+            0%{
+                color: black;
+            }
+            30%{
+                letter-spacing: 25px;
+            }
+            85%{
+                letter-spacing: 8px;
+            }
+        }
+       
     </style>
 </head>
 <body >
     <div class="contact-section">
         <section class="text-gray-600 body-font relative">
             <div class="container px-5 py-24 mx-auto">
-              <div class="flex flex-col text-center w-full mb-12">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Me</h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">I&apos;m always open to collaboration, new opportunities, and discussions on software engineering, actuarial science, and innovation. </p>
-              </div>
+                <div class="flex flex-col text-center w-full mb-12">
+                    <a class="nav-page" href="/portfolio/index.html"><i class='bx bx-left-arrow-alt' ></i></a>
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Me</h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">I&apos;m always open to collaboration, new opportunities, and discussions on software engineering, actuarial science, and innovation. </p>
+                </div>
               <div class="lg:w-1/2 md:w-2/3 mx-auto">
                 <div class="flex flex-wrap -m-2">
                   <div class="p-2 w-1/2">

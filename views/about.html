@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- local css -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="">
+    <!-- boxicons link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 
     <style>
@@ -44,6 +46,10 @@
             85%{
                 letter-spacing: 8px;
             }
+           
+            100%{
+                letter-spacing: normal;
+            }
         }
 
         span{
@@ -65,11 +71,35 @@
         .about p:hover{
             color: aqua;
         }
+
+
+        /*page navigation*/
+        .bx.bx-left-arrow-alt{
+            color: antiquewhite;
+            font-size: 3rem;
+            position: relative;
+            top: -50px;
+            animation: nav 3s 1;
+        }
+        
+        @keyframes nav {
+            0%{
+                color: black;
+            }
+            30%{
+                letter-spacing: 25px;
+            }
+            85%{
+                letter-spacing: 8px;
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="about" >
+        <a href="/portfolio/index.html"><i class='bx bx-left-arrow-alt' ></i></a>
+        
         <h1>
             About <span>Myself</span>
         </h1>
