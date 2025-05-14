@@ -29,7 +29,7 @@ app.get('/', (req,res)=>{
     res.status(200).sendFile(path.join(__dirname,'index.html'));
 });
 
-app.get('/', (req, res)=>{
+app.get('/contact', (req, res)=>{
     res.status(200).sendFile(path.join(__dirname, 'pages', 'contact.html'));
 })
 
