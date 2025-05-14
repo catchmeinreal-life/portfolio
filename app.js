@@ -33,6 +33,13 @@ app.get('/contact', (req, res)=>{
     res.status(200).sendFile(path.join(__dirname, 'pages', 'contact.html'));
 })
 
+app.get('/about', (req, res)=>{
+    res.status(200).sendFile(path.join(__dirname, 'pages', 'about.html'));
+});
+app.get('/portfolio', (req, res)=>{
+    res.status(200).sendFile(path.join(__dirname, 'pages', 'portfolio.html'));
+});
+
 const PORT = process.env.PORT || 3000;
 
 //  run the server
